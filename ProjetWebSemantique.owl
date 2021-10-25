@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#"
+     xml:base="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6"
+     xmlns:s="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#s&apos;"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-6="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#AppartientA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#AppartientA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Departement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Enseigne -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Enseigne">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#EnseignePar"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#EnseignePar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#EnseignePar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#EtudieA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#EtudieA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Departement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TravailleA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TravailleA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Departement"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#s&apos;inscrire -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#s&apos;inscrire">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#cID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#cID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#cNom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#cNom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#dID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#dID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Departement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#dNom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#dNom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Departement"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#eID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#eID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#eNom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#eNom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#staffNom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#staffNom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Departement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Departement"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Badiaa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Badiaa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff"/>
+        <Enseigne rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DS"/>
+        <TravailleA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TIC"/>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</staffID>
+        <staffNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Badiaa Bouhdid</staffNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+        <AppartientA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#SII"/>
+        <cID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19040001</cID>
+        <cNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Mining</cNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+        <AppartientA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TIC"/>
+        <cID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19040002</cID>
+        <cNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Data Science</cNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Ines -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Ines">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff"/>
+        <Enseigne rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DM"/>
+        <TravailleA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#SII"/>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</staffID>
+        <staffNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ines Ben Halima</staffNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Karim -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Karim">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+        <EtudieA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TIC"/>
+        <s:inscrire rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DM"/>
+        <eID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0160001</eID>
+        <eNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Karim Ben Tarjem</eNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Mayssa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Mayssa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+        <EtudieA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#SII"/>
+        <s:inscrire rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DS"/>
+        <s:inscrire rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#WS"/>
+        <eID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0160002</eID>
+        <eNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mayssa Zaouali</eNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Mehdi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Mehdi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+        <EtudieA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TIC"/>
+        <s:inscrire rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DS"/>
+        <s:inscrire rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#WS"/>
+        <eID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0160003</eID>
+        <eNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mehdi Tekaya</eNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Mohamed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Mohamed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+        <EtudieA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TIC"/>
+        <s:inscrire rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DM"/>
+        <s:inscrire rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DS"/>
+        <eID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0160004</eID>
+        <eNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mohamed Habib Hanini</eNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#SII -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#SII">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Departement"/>
+        <dID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</dID>
+        <dNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">système d&apos;information informatique</dNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Sarra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Sarra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff"/>
+        <Enseigne rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#WS"/>
+        <TravailleA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TIC"/>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</staffID>
+        <staffNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sarra Abidi</staffNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TIC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TIC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Departement"/>
+        <dID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</dID>
+        <dNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">technologies de l&apos;information et de la communication</dNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#WS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#WS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+        <AppartientA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#TIC"/>
+        <cID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19040003</cID>
+        <cNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Web Semantique</cNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Wejdene -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Wejdene">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+        <EtudieA rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#SII"/>
+        <s:inscrire rdf:resource="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#DS"/>
+        <eID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0160005</eID>
+        <eNom rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wejdene Ben Jeddou</eNom>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Cours"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Departement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Etudiant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/mehdi/ontologies/2021/9/untitled-ontology-6#Staff"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
